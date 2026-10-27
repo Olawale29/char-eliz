@@ -24,13 +24,13 @@ export default function TeamPage() {
 
       <section className="bg-white py-20">
         <div className="container-site space-y-20">
-          {team.map((member, index) => (
+          {team.map((member) => (
             <article
               key={member.slug}
               id={member.slug}
               className="scroll-mt-28 grid grid-cols-1 gap-10 border-b border-border-subtle pb-20 last:border-b-0 last:pb-0 lg:grid-cols-[minmax(0,280px)_minmax(0,1fr)]"
             >
-              <Reveal y={index % 2 === 1 ? -28 : 28} className={index % 2 === 1 ? "lg:order-2" : ""}>
+              <Reveal y={28}>
                 <div className="relative aspect-[4/5] w-full max-w-xs overflow-hidden bg-surface-muted">
                   <Image
                     src={member.image}
@@ -41,7 +41,7 @@ export default function TeamPage() {
                   />
                 </div>
               </Reveal>
-              <Reveal delay={0.1} className={index % 2 === 1 ? "lg:order-1" : ""}>
+              <Reveal delay={0.1}>
                 <h2 className="font-[family-name:var(--font-heading)] text-2xl font-semibold text-brand-navy">
                   {member.name}
                 </h2>

@@ -24,7 +24,7 @@ export const team: TeamMember[] = [
   {
     slug: "elizabeth-enahonna",
     name: "Elizabeth Enahonna",
-    role: "Admin / Alternate CEO",
+    role: "Director",
     image: "/images/team/elizabeth-enahonna.jpg",
     bio: [
       "An astute start-up entrepreneur and widely travelled international business woman.",

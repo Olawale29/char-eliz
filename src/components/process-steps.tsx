@@ -20,9 +20,7 @@ export function ProcessSteps() {
             <Reveal
               key={step.number}
               delay={staggerDelay(index, 0.1)}
-              className={`relative pr-6 ${
-                index < processSteps.length - 1 ? "lg:border-r lg:border-border-subtle" : ""
-              }`}
+              className="relative pr-6"
             >
               <span className="font-[family-name:var(--font-heading)] text-4xl font-semibold text-brand-pale-blue">
                 {step.number}

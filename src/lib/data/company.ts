@@ -22,15 +22,18 @@ export const company = {
     "Excellence",
   ],
   offices: [
-    { region: "Lagos, Nigeria", detail: "32, Adegbola Street, Anifowoshe, Ikeja, Lagos." },
+    {
+      region: "Lagos, Nigeria",
+      detail: "32 Adegbola Street, Anifowoshe, Ikeja, Lagos State, Nigeria.",
+    },
     { region: "Abuja, Nigeria", detail: "903, Olu Awotesu Street, (Opposite White British School) Jabi, Abuja." },
     { region: "Atlanta, USA", detail: "Suite 104, 300 Village Centre Drive, Woodstock, GA 30188-5135." },
     { region: "Castellon, Spain", detail: "Operational office." },
     { region: "Vabio Filzi, Italy", detail: "Operational office." },
     { region: "Luton, UK", detail: "Operational office." },
   ],
-  phones: ["+234 813 7308 689", "+234 901 796 8697", "+1 (832) 941-7299"],
-  email: "info@charelizng.com",
+  phones: ["+234 813 7308 689", "+234 802 866 3973", "+1 (832) 941-7299"],
+  email: "charles.enahonna@charelizng.com",
   website: "www.charelizng.com",
   advisers: [
     { name: "Messrs. Olubunmi Fayemi & Co.", role: "Company Secretary / Legal Adviser" },
@@ -41,7 +44,7 @@ export const company = {
     { name: "Architect Luckie Ogbeifun", role: "Member" },
     { name: "Alhaji Muawiya Abana", role: "Member" },
     { name: "Charles Ekholowa Enahonna", role: "Chief Executive Officer" },
-    { name: "Elizabeth Chenayon Enahonna (Mrs)", role: "Member (Alternate CEO)" },
+    { name: "Elizabeth Chenayon Enahonna (Mrs)", role: "Director" },
   ],
   partners: [
     "Tangent Construction",

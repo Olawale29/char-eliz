@@ -89,10 +89,7 @@ export default function AboutPage() {
             ))}
           </div>
 
-          <div className="mt-10 flex flex-wrap items-center gap-4">
-            <p className="text-sm text-text-secondary">
-              Pictured profiles for the executive management team are available on our team page.
-            </p>
+          <div className="mt-10">
             <Button href="/team" variant="secondary">
               Meet Our Team
             </Button>

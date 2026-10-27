@@ -140,6 +140,34 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Vision and mission */}
+      <section className="bg-brand-navy py-24 text-white">
+        <div className="container-site">
+          <Reveal>
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-pale-blue">
+              OUR DIRECTION
+            </p>
+            <h2 className="mt-3 max-w-2xl font-[family-name:var(--font-heading)] text-3xl font-semibold leading-tight sm:text-4xl">
+              The purpose behind every CharEliz engagement.
+            </h2>
+          </Reveal>
+          <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-2">
+            <Reveal className="border border-white/20 p-8 sm:p-10">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-pale-blue">Vision</p>
+              <p className="mt-5 font-[family-name:var(--font-heading)] text-2xl font-semibold leading-snug">
+                {company.vision}
+              </p>
+            </Reveal>
+            <Reveal delay={0.1} className="bg-white p-8 text-brand-navy sm:p-10">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-blue">Mission</p>
+              <p className="mt-5 font-[family-name:var(--font-heading)] text-2xl font-semibold leading-snug">
+                {company.mission}
+              </p>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
       {/* Why CharEliz */}
       <section className="bg-brand-off-white py-24">
         <div className="container-site grid grid-cols-1 gap-14 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.4fr)]">
@@ -167,6 +195,32 @@ export default function HomePage() {
               </Reveal>
             ))}
           </ol>
+        </div>
+      </section>
+
+      {/* Partners */}
+      <section className="bg-white py-24">
+        <div className="container-site">
+          <Reveal>
+            <SectionHeading
+              eyebrow="TRUSTED EXPERIENCE"
+              title="Organisations We Have Worked With"
+              description="Our delivery experience spans corporate, institutional and faith-based organisations across Nigeria."
+            />
+          </Reveal>
+          <div className="mt-12 grid grid-cols-1 border-l border-t border-border-subtle sm:grid-cols-2 lg:grid-cols-3">
+            {company.partners.map((partner, index) => (
+              <Reveal
+                key={partner}
+                delay={staggerDelay(index, 0.04)}
+                className="flex min-h-28 items-center border-b border-r border-border-subtle p-6"
+              >
+                <span className="font-[family-name:var(--font-heading)] text-lg font-semibold text-brand-navy">
+                  {partner}
+                </span>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
 
