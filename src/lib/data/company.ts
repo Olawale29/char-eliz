@@ -24,7 +24,7 @@ export const company = {
   offices: [
     {
       region: "Lagos, Nigeria",
-      detail: "32 Adegbola Street, Anifowoshe, Ikeja, Lagos State, Nigeria.",
+      detail: "239B Purple Street, L.C.H Estate, Oke-Afa, Isolo, Lagos State, Nigeria.",
     },
     { region: "Abuja, Nigeria", detail: "903, Olu Awotesu Street, (Opposite White British School) Jabi, Abuja." },
     { region: "Atlanta, USA", detail: "Suite 104, 300 Village Centre Drive, Woodstock, GA 30188-5135." },
@@ -32,7 +32,7 @@ export const company = {
     { region: "Vabio Filzi, Italy", detail: "Operational office." },
     { region: "Luton, UK", detail: "Operational office." },
   ],
-  phones: ["+234 813 7308 689", "+234 802 866 3973", "+1 (832) 941-7299"],
+  phones: ["+234 813 7308 689", "+234 802 866 3973"],
   email: "info@charelizng.com",
   website: "www.charelizng.com",
   advisers: [
