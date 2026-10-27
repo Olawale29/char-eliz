@@ -33,7 +33,7 @@ export const company = {
     { region: "Luton, UK", detail: "Operational office." },
   ],
   phones: ["+234 813 7308 689", "+234 802 866 3973", "+1 (832) 941-7299"],
-  email: "charles.enahonna@charelizng.com",
+  email: "info@charelizng.com",
   website: "www.charelizng.com",
   advisers: [
     { name: "Messrs. Olubunmi Fayemi & Co.", role: "Company Secretary / Legal Adviser" },
