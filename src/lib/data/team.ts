@@ -25,7 +25,7 @@ export const team: TeamMember[] = [
     slug: "elizabeth-enahonna",
     name: "Elizabeth Enahonna",
     role: "Director",
-    image: "/images/team/elizabeth-enahonna.jpg",
+    image: "/images/team/elizabeth-enahonna-director.jpg",
     bio: [
       "An astute start-up entrepreneur and widely travelled international business woman.",
       "She has attended several national and international seminars, workshops, management and training programmes on leadership, strategy, project management and human resources from notable institutions and business schools, including the Haggai Christian Leadership Institute, Phillips Consulting, Lagos Business School (LBS) and Howard University, Washington DC, USA.",

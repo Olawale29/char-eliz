@@ -8,12 +8,15 @@ import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/motion/reveal";
 import { staggerDelay } from "@/lib/stagger";
 import { company } from "@/lib/data/company";
+import { team } from "@/lib/data/team";
 
 export const metadata: Metadata = {
   title: "About",
   description:
     "CharEliz Nominees Consolidated Services Limited — company background, mission, vision, values and leadership.",
 };
+
+const elizabeth = team.find((member) => member.slug === "elizabeth-enahonna");
 
 export default function AboutPage() {
   return (
@@ -88,6 +91,36 @@ export default function AboutPage() {
               </Reveal>
             ))}
           </div>
+
+          {elizabeth ? (
+            <Reveal className="mt-16 grid grid-cols-1 overflow-hidden bg-surface-light lg:grid-cols-[minmax(0,340px)_minmax(0,1fr)]">
+              <div className="relative aspect-[4/5] lg:aspect-auto">
+                <Image
+                  src={elizabeth.image}
+                  alt={elizabeth.name}
+                  fill
+                  sizes="(min-width: 1024px) 340px, 100vw"
+                  className="object-cover object-top"
+                />
+              </div>
+              <div className="p-8 sm:p-10">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-blue">Director Profile</p>
+                <h3 className="mt-3 font-[family-name:var(--font-heading)] text-2xl font-semibold text-brand-navy">
+                  Elizabeth Chenayon Enahonna (Mrs)
+                </h3>
+                <p className="mt-1 text-sm font-semibold uppercase tracking-wider text-brand-blue">
+                  {elizabeth.role}
+                </p>
+                <div className="mt-6 space-y-4">
+                  {elizabeth.bio.map((paragraph) => (
+                    <p key={paragraph} className="text-sm leading-relaxed text-text-secondary">
+                      {paragraph}
+                    </p>
+                  ))}
+                </div>
+              </div>
+            </Reveal>
+          ) : null}
 
           <div className="mt-10">
             <Button href="/team" variant="secondary">
